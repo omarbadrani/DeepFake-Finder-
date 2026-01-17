@@ -1,121 +1,121 @@
-# 🔍 Détecteur d'Images IA avec Deep Learning
+# 🔍 AI Image Detector with Deep Learning
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![GUI](https://img.shields.io/badge/GUI-Tkinter-yellow)
 
-Une application complète de détection d'images générées par intelligence artificielle utilisant un modèle hybride combinant Deep Learning et analyse de caractéristiques traditionnelles.
+A complete application for detecting AI-generated images using a hybrid model combining Deep Learning and traditional feature analysis.
 
-## ✨ Fonctionnalités
+## ✨ Features
 
-### 🎯 Détection Avancée
-- **Modèle CNN profond** avec régularisation L2 et Dropout
-- **Analyse hybride** combinant deep learning + caractéristiques traditionnelles
-- **Détection de texture** avec motifs binaires locaux (LBP)
-- **Analyse fréquentielle** par transformée de Fourier (FFT)
-- **Détection d'artefacts** de compression
+### 🎯 Advanced Detection
+- **Deep CNN model** with L2 regularization and Dropout
+- **Hybrid analysis** combining deep learning + traditional features
+- **Texture detection** with Local Binary Patterns (LBP)
+- **Frequency analysis** using Fourier Transform (FFT)
+- **Compression artifact** detection
 
-### 🖥️ Interface Utilisateur
-- **Interface graphique moderne** avec Tkinter
-- **Visualisation interactive** des caractéristiques d'images
-- **Onglets multiples** (Analyse, Visualisation, Paramètres)
-- **Barres de progression** pour les opérations longues
-- **Journalisation complète** des analyses
+### 🖥️ User Interface
+- **Modern GUI** with Tkinter
+- **Interactive visualization** of image features
+- **Multiple tabs** (Analysis, Visualization, Settings)
+- **Progress bars** for long operations
+- **Complete logging** of analyses
 
-### 🔧 Outils Professionnels
-- **Entraînement personnalisé** avec votre propre dataset
-- **Analyse par lots** avec threading et progression
-- **Validation croisée** optionnelle (5 folds)
-- **Export des résultats** en CSV/Excel
-- **Gestion de cache** pour accélérer les analyses
+### 🔧 Professional Tools
+- **Custom training** with your own dataset
+- **Batch analysis** with threading and progress tracking
+- **Optional cross-validation** (5 folds)
+- **Results export** to CSV/Excel
+- **Cache management** to speed up analyses
 
-### 📊 Métriques et Visualisation
-- **Matrices de confusion** détaillées
-- **Graphiques comparatifs** des caractéristiques
-- **Suivi de l'overfitting** en temps réel
-- **Rapports de classification** complets
-- **Visualisation radar** des caractéristiques avancées
+### 📊 Metrics & Visualization
+- **Detailed confusion matrices**
+- **Comparative feature graphs**
+- **Real-time overfitting tracking**
+- **Complete classification reports**
+- **Radar charts** of advanced features
 
 ## 🚀 Installation
 
-### Prérequis
-- Python 3.8 ou supérieur
-- 4GB RAM minimum (8GB recommandé)
-- 2GB espace disque libre
+### Prerequisites
+- Python 3.8 or higher
+- 4GB RAM minimum (8GB recommended)
+- 2GB free disk space
 
-### Installation Automatique
+### Automatic Installation
 ```bash
-# Cloner le dépôt
-git clone https://github.com/votre-username/ia-image-detector.git
-cd ia-image-detector
+# Clone repository
+git clone https://github.com/username/ai-image-detector.git
+cd ai-image-detector
 
-# Installer les dépendances
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-### Installation Manuellement
+### Manual Installation
 ```bash
 pip install tensorflow pillow numpy opencv-python scikit-learn matplotlib seaborn pandas
 ```
 
-## 📁 Structure du Projet
+## 📁 Project Structure
 
 ```
-ia-image-detector/
-├── fakeimg.py                  # Application principale
-├── requirements.txt            # Dépendances
-├── config.json                 # Configuration
-├── ia_image_detector.h5        # Modèle pré-entraîné
-├── best_model.h5              # Meilleur modèle sauvegardé
-├── logs/                      # Journaux d'analyse
+ai-image-detector/
+├── detector.py               # Main application
+├── requirements.txt          # Dependencies
+├── config.json               # Configuration
+├── ai_image_detector.h5      # Pre-trained model
+├── best_model.h5            # Saved best model
+├── logs/                    # Analysis logs
 │   └── analysis_*.csv
-├── dataset/                   # Structure recommandée
+├── dataset/                 # Recommended structure
 │   ├── train/
 │   │   ├── real/
 │   │   └── ai/
 │   └── test/
 │       ├── real/
 │       └── ai/
-└── README.md                  # Ce fichier
+└── README.md                # This file
 ```
 
-## 🎮 Utilisation
+## 🎮 Usage
 
-### Lancement de l'Application
+### Launch Application
 ```bash
-python fakeimg.py
+python detector.py
 ```
 
-### Guide Rapide
+### Quick Guide
 
-1. **Analyse d'une image unique** :
-   - Cliquez sur "📁 Sélectionner une image"
-   - Cliquez sur "🔍 Analyser"
-   - Consultez les résultats détaillés
+1. **Single Image Analysis**:
+   - Click "📁 Select Image"
+   - Click "🔍 Analyze"
+   - View detailed results
 
-2. **Entraînement du modèle** :
-   - Cliquez sur "🎓 Entraîner le modèle"
-   - Sélectionnez vos dossiers d'images réelles et IA
-   - Configurez les paramètres d'entraînement
-   - Lancez l'entraînement
+2. **Model Training**:
+   - Click "🎓 Train Model"
+   - Select real and AI image folders
+   - Configure training parameters
+   - Start training
 
-3. **Analyse par lots** :
-   - Cliquez sur "📂 Analyser un dossier"
-   - Sélectionnez un dossier contenant des images
-   - Suivez la progression en temps réel
-   - Exportez les résultats
+3. **Batch Analysis**:
+   - Click "📂 Analyze Folder"
+   - Select folder containing images
+   - Track real-time progress
+   - Export results
 
-### Formats d'Image Supportés
+### Supported Image Formats
 - JPG/JPEG
 - PNG
 - BMP
 - TIFF
 - WebP
 
-## 🧠 Architecture Technique
+## 🧠 Technical Architecture
 
-### Modèle Deep Learning
+### Deep Learning Model
 ```python
 Sequential([
     Augmentation Layer,
@@ -128,32 +128,32 @@ Sequential([
 ])
 ```
 
-### Caractéristiques Analysées
-1. **Texture** : LBP, entropie, contraste
-2. **Couleur** : Variance, cohérence LAB
-3. **Fréquence** : Analyse FFT
-4. **Bords** : Densité, qualité
-5. **Artefacts** : Compression, bruit
+### Analyzed Features
+1. **Texture**: LBP, entropy, contrast
+2. **Color**: Variance, LAB coherence
+3. **Frequency**: FFT analysis
+4. **Edges**: Density, quality
+5. **Artifacts**: Compression, noise
 
 ## 📊 Performance
 
-### Métriques Typiques
-| Métrique | Valeur | Description |
-|----------|--------|-------------|
-| Précision Entraînement | 98-99% | Performance sur données connues |
-| Précision Validation | 75-85% | Performance sur nouvelles données |
-| Temps d'Analyse | 1-3s/image | Dépend du matériel |
-| Taille Modèle | ~15MB | Fichier .h5 compressé |
+### Typical Metrics
+| Metric | Value | Description |
+|--------|-------|-------------|
+| Training Accuracy | 98-99% | Performance on known data |
+| Validation Accuracy | 75-85% | Performance on new data |
+| Analysis Time | 1-3s/image | Hardware dependent |
+| Model Size | ~15MB | Compressed .h5 file |
 
-### Amélioration de la Généralisation
-- **Early Stopping** : Arrêt automatique pour éviter l'overfitting
-- **Réduction LR** : Ajustement dynamique du learning rate
-- **Validation Croisée** : 5 folds pour robustesse
-- **Augmentation Données** : Transformations aléatoires
+### Generalization Improvements
+- **Early Stopping**: Automatic stop to prevent overfitting
+- **LR Reduction**: Dynamic learning rate adjustment
+- **Cross-Validation**: 5 folds for robustness
+- **Data Augmentation**: Random transformations
 
 ## 🔧 Configuration
 
-### Fichier config.json
+### config.json File
 ```json
 {
     "img_size": [128, 128],
@@ -166,140 +166,40 @@ Sequential([
 }
 ```
 
-### Paramètres Modifiables
-- **Taille d'image** : 128x128 par défaut
-- **Taux de Dropout** : Contrôle l'overfitting
-- **Régularisation L2** : Pénalise les poids importants
-- **Batch Size** : Nombre d'images par lot
-- **Early Stopping** : Patience avant arrêt
+## 📈 Results & Visualization
 
-## 📈 Résultats et Visualisation
+Application generates several visualization types:
+1. **Bar charts**: Main features
+2. **Radar plot**: Advanced features
+3. **Confusion matrices**: Model performance
+4. **Learning curves**: Overfitting tracking
 
-L'application génère plusieurs types de visualisations :
+## 🔧 Troubleshooting
 
-1. **Graphiques à barres** : Caractéristiques principales
-2. **Radar plot** : Caractéristiques avancées
-3. **Matrices de confusion** : Performance du modèle
-4. **Courbes d'apprentissage** : Suivi de l'overfitting
+### Common Issues:
+1. **Memory error**: Reduce batch size
+2. **Missing imports**: Run `pip install --upgrade -r requirements.txt`
+3. **Model not loaded**: Delete and recreate `ai_image_detector.h5`
 
-## 🐛 Dépannage
+### Logs & Debug
+- Logs saved in `logs/` folder
+- Each analysis generates timestamped CSV file
+- Errors captured and displayed in interface
 
-### Problèmes Courants
+## 📄 License
+MIT License - see LICENSE file for details.
 
-1. **Erreur de mémoire** :
-```bash
-# Réduire la taille du batch
-export TF_GPU_ALLOCATOR=cuda_malloc_async
-```
-
-2. **Importations manquantes** :
-```bash
-pip install --upgrade -r requirements.txt
-```
-
-3. **Modèle non chargé** :
-```bash
-# Supprimer et recréer le modèle
-rm ia_image_detector.h5
-python fakeimg.py
-```
-
-### Journaux et Debug
-- Les logs sont sauvegardés dans `logs/`
-- Chaque analyse génère un fichier CSV horodaté
-- Les erreurs sont capturées et affichées dans l'interface
-
-## 📝 Exemples d'Utilisation
-
-### Pour les Développeurs
-```python
-# Utilisation programmatique
-detector = HybridDetector(config_manager)
-result = detector.predict_image("image.jpg")
-print(f"Résultat: {result['message']}")
-```
-
-### Pour la Recherche
-- Modifiez `create_improved_model()` pour expérimenter
-- Utilisez la validation croisée pour des résultats robustes
-- Exportez les données pour analyse externe
-
-### Pour la Production
-- Augmentez `img_size` pour plus de précision
-- Ajoutez plus de données d'entraînement
-- Utilisez `analyze_batch()` pour le traitement en masse
-
-## 🤝 Contribution
-
-### Rapport de Bugs
-1. Vérifiez les issues existantes
-2. Décrivez le bug avec précision
-3. Incluez les messages d'erreur
-4. Fournissez des images de test si possible
-
-### Suggestions d'Amélioration
-1. Décrivez la fonctionnalité
-2. Expliquez son utilité
-3. Proposez une implémentation si possible
-
-### Développement
-```bash
-# Fork le projet
-git clone votre-fork
-cd ia-image-detector
-
-# Créer une branche
-git checkout -b feature/ma-fonctionnalité
-
-# Commiter les changements
-git commit -m "Ajout de ma fonctionnalité"
-
-# Pusher
-git push origin feature/ma-fonctionnalité
-
-# Créer une Pull Request
-```
-
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
-
-## 🙏 Remerciements
-
-- **TensorFlow/Keras** : Framework de deep learning
-- **PIL/Pillow** : Traitement d'images
-- **OpenCV** : Vision par ordinateur
-- **Scikit-learn** : Métriques et validation
-- **Tkinter** : Interface graphique
-
-
+## 👤 Author
+**omar badrani**  
+- GitHub: https://github.com/omarbadrani  
+- Email: omarbadrani770@gmail.com
 
 ---
 
-**⭐ Si ce projet vous est utile, n'hésitez pas à lui donner une étoile sur GitHub !**
-
-## 🚀 Roadmap
-
-### À Venir
-- [ ] Support des modèles pré-entraînés (EfficientNet, ResNet)
-- [ ] API REST pour intégration web
-- [ ] Dockerisation
-- [ ] Interface web avec Streamlit
-- [ ] Support GPU avancé
-- [ ] Benchmark avec d'autres méthodes
-
-### En Développement
-- ✅ Interface graphique complète
-- ✅ Analyse hybride deep learning + caractéristiques
-- ✅ Entraînement personnalisé
-- ✅ Export des résultats
-- ✅ Visualisation des données
-
-### Réalisé
-- ✅ Modèle CNN de base
-- ✅ Détection de caractéristiques traditionnelles
-- ✅ Interface utilisateur simple
-- ✅ Sauvegarde/chargement des modèles
+⭐ **If this project is useful, please star the repository!** ⭐
 
 ---
 
+**Version**: 1.0.0  
+**Python**: 3.8+  
+**OS**: Windows, Linux, macOS
