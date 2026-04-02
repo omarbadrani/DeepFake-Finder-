@@ -47,7 +47,7 @@ A complete application for detecting AI-generated images using a hybrid model co
 ### Automatic Installation
 ```bash
 # Clone repository
-git clone https://github.com/username/ai-image-detector.git
+git clone https://github.com/omarbadrani/ai-image-detector.git
 cd ai-image-detector
 
 # Install dependencies
